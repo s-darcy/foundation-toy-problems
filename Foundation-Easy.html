@@ -7,12 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/css/foundation.min.css" rel="stylesheet" type="text/css">
-    <link href="foundation-easy.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
 
   </head>
   <body>
-
-
     <header>
     <!--MEDIUM (BONUS): Take that same nav menu and make it fixed to the top of the page.-->  
         <div class="fixed contain-to-grid">
@@ -60,10 +58,35 @@
           </div>
       </section>
 
+      <section>
+        <div class="row">
+          <div class="columns large-4 large-offset-4 small-6 small-offset-3 end">
+              <!--HARD: Choose a favorite music video of yours from Youtube. 
+              Create a modal that pops up when a button is clicked containing you music video.-->
+
+              <!-- Triggers the modals -->
+              <a href="#" data-reveal-id="videoModal" class="radius button">Traveling Wilbury's - End of the Line</a>
+            
+                    <div id="videoModal" class="reveal-modal large" data-reveal aria-labelledby="videoModalTitle" aria-hidden="true" role="dialog">
+                      <h2 id="videoModalTitle">Traveling Wilburys - End Of The Line</h2>
+                      <div class="flex-video widescreen vimeo">
+                        <iframe width="1280" height="720" src="https://www.youtube.com/watch?v=cwqhdRs4jyA" frameborder="0" allowfullscreen></iframe>
+                      </div>
+            
+                      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                    </div>
+                    <!-- Reveal Modals end -->
+            </div>
+          </div>
+      </section>
+
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation.min.js"></script>
       <script>
         $(document).foundation();
+
+        $('#myModal').foundation('reveal', 'open');
+        $('#myModal').foundation('reveal', 'close');
       </script>
   </body>
 </html>
