@@ -1,0 +1,56 @@
+<!--10 Daily Challenges-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/css/foundation.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+
+    <!--No.1 Create a heading 1 tag and center the text using a Foundation class only-->
+    <h1 class="text-center">This Is My H1 Tag</h1>
+
+    <!--No.2 Create a pricing table that is only visible on medium browser screens. 
+    Only use Foundation classes to acheive this-->  
+    <section>
+      <div class="row show-for-medium-only">
+        <div class="columns medium-8">
+            <ul class="pricing-table">
+                <li class="title">Standard</li>
+                <li class="price">$99.99</li>
+                <li class="description">An awesome description</li>
+                <li class="bullet-item">1 Database</li>
+                <li class="bullet-item">5GB Storage</li>
+                <li class="bullet-item">20 Users</li>
+                <li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+              </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--No.3 Add a light-box with any 3 work appropriate images you like.--> 
+    <section>
+        <div class="row">
+            <div class="columns large-8 small-12">
+              <ul class="clearing-thumbs" data-clearing>
+                <li><a href="img/champs.jpg"><img src="img/champs.jpg-th"></a></li>
+                <li><a href="img/georgiawins.png"><img src="img/georgiawins.png-th"></a></li>
+                <li><a href="img/nick_chubb.jpg"><img src="img/nick_chubb.jpg-th"></a></li>
+              </ul>
+            </div>
+        </div>        
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
