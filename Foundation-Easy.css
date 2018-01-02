@@ -1,0 +1,26 @@
+.green {
+background-color: #139149;
+height: 200px;
+}
+
+.white {
+    height: 200px;
+    background-color: white;
+}
+
+.red {
+    height: 200px;
+    background-color:#CC2E3B
+}
+
+ul {
+    height: 70px;
+}
+
+.button {
+    margin: 5px;
+}
+
+.top-bar{
+    height: 70px;
+} 

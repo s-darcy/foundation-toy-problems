@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/css/foundation.min.css" rel="stylesheet" type="text/css">
+    <link href="foundation-easy.css" rel="stylesheet" type="text/css">
+
+  </head>
+  <body>
+
+
+    <header>
+    <!--MEDIUM (BONUS): Take that same nav menu and make it fixed to the top of the page.-->  
+        <div class="fixed contain-to-grid">
+            <nav class="top-bar" data-topbar role="navigation">
+
+    <!--MEDIUM: Create an a navigation list of 5 items that share the same line with a button 
+    that has rounded edges using only Foundation classes. (No CSS should be used here)-->              
+              <ul class="inline-list">
+                <li><a class="button round" href="#">HOME</a></li>
+                
+                <!--HARD:  Make one of your 5 nav items into a sub-menu. 
+                This item should work as a hover dropdown menu for additional sub-menu items. 
+                (For ex. A 'Products' item could have a drop down of 4 different products: 1. Internet only, 2. TV only, 3. Internet + TV, 4. Internet + TV + Phone)-->
+                <li>
+                  <a class="button round dropdown" href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false">PRODUCTS</a>
+                    <ol id="drop1" data-dropdown-content role="menu" class="f-dropdown" aria-hidden="true">
+                      <li><a href="#">Internet only</a></li>
+                      <li><a href="#">TV only</a></li>
+                      <li><a href="#">Internet + TV</a></li>
+                      <li><a href="#">Internet + TV + Phone</a></li>
+                    </ol>
+                </li>
+                <li><a class="button round" href="#">PLANS</a></li>
+                <li><a class="button round" href="#">ABOUT</a></li>
+                <li><a class="button round" href="#">CONTACT US</a></li>
+              </ul>
+            </nav>
+        </div>    
+      </header>
+
+    <!--EASY: Create the Italian Flag so that it fits centered with a width of 50%
+    on the page for large browser screens, and it fits 100% width on small browser screens (Use a height of 200px).
+    The width must be created using Foundation classes only, not CSS.-->
+      <section>
+          <div class="row">
+              <div class="large-2 large-offset-3 small-4 columns">
+                <div class="green"></div>
+              </div>
+              <div class="large-2 small-4 columns">
+                <div class="white"></div>
+              </div>
+              <div class="large-2 small-4 columns end">
+                <div class="red"></div>
+              </div>
+          </div>
+      </section>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation.min.js"></script>
+      <script>
+        $(document).foundation();
+      </script>
+  </body>
+</html>
