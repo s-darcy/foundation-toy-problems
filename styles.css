@@ -1,16 +1,16 @@
-.green {
-    background-color: #139149;
+.black {
+    background-color: black;
     height: 200px;
 }
 
-.white {
+.yellow {
     height: 200px;
-    background-color: white;
+    background-color: #F9DE52;
 }
 
 .red {
     height: 200px;
-    background-color:#CC2E3B
+    background-color: #EA2D3F;
 }
 
 ul {

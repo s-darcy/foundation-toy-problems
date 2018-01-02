@@ -41,16 +41,19 @@
         </div>    
       </header>
 
-    <!--EASY: Create the Italian Flag so that it fits centered with a width of 50%
-    on the page for large browser screens, and it fits 100% width on small browser screens (Use a height of 200px).
-    The width must be created using Foundation classes only, not CSS.-->
+    <!--EASY: Create the Belgium Flag so that it fits centered with a total width of 50%
+    on the page for large browser screens, and it fits with a 100% width on small browser screens.
+    Use a CSS height property of 200px for the colors.
+    The width, however, must be created using Foundation classes only, not CSS.
+    (Don't worry about making the colors of the flag touch either other; 
+    there will be white space between each color due to Foundation's built-in margins-->
       <section>
           <div class="row">
               <div class="large-2 large-offset-3 small-4 columns">
-                <div class="green"></div>
+                <div class="black"></div>
               </div>
               <div class="large-2 small-4 columns">
-                <div class="white"></div>
+                <div class="yellow"></div>
               </div>
               <div class="large-2 small-4 columns end">
                 <div class="red"></div>
@@ -60,33 +63,29 @@
 
       <section>
         <div class="row">
-          <div class="columns large-4 large-offset-4 small-6 small-offset-3 end">
+          <div class="columns large-6 large-offset-3 small-12 end text-center">
               <!--HARD: Choose a favorite music video of yours from Youtube. 
-              Create a modal that pops up when a button is clicked containing you music video.-->
+              Create a modal that pops up when a button is clicked containing you music video.
+             (You may need to look up how to embed the YouTube video, if so, please look it up)-->
 
               <!-- Triggers the modals -->
-              <a href="#" data-reveal-id="videoModal" class="radius button">Traveling Wilbury's - End of the Line</a>
-            
-                    <div id="videoModal" class="reveal-modal large" data-reveal aria-labelledby="videoModalTitle" aria-hidden="true" role="dialog">
-                      <h2 id="videoModalTitle">Traveling Wilburys - End Of The Line</h2>
-                      <div class="flex-video widescreen vimeo">
-                        <iframe width="1280" height="720" src="https://www.youtube.com/watch?v=cwqhdRs4jyA" frameborder="0" allowfullscreen></iframe>
-                      </div>
-            
-                      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-                    </div>
-                    <!-- Reveal Modals end -->
+              <a href="#" data-reveal-id="video-modal" class="radius button">Traveling Wilbury's - End of the Line</a>
             </div>
           </div>
       </section>
-
+      
+      <!-- Reveal Modals end -->
+      <div id="video-modal" class="reveal-modal reveal-modal--video" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+        <div class="flex-video widescreen youtube">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/cwqhdRs4jyA" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+      </div>
+      
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation.min.js"></script>
       <script>
         $(document).foundation();
-
-        $('#myModal').foundation('reveal', 'open');
-        $('#myModal').foundation('reveal', 'close');
       </script>
   </body>
 </html>
