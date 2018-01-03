@@ -6,3 +6,20 @@
 .row {
     width: 1600px;
 }
+
+.atlas_shrugged,
+.scott_adams, 
+.outliers {
+    margin: auto;
+}
+
+.example-orbit {
+    background: rgba(4, 2, 117, 0.76);
+}
+
+.atlas_shrugged {
+    width: 75%;
+}
+.outliers {
+    width: 75%;
+}

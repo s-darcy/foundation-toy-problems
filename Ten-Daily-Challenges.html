@@ -13,124 +13,194 @@
   </head>
   <body>
 
-  <main>
-   
-    <!--No.1 Create a heading 1 tag and center the text using a Foundation class only (VERY EASY)-->
-    <h1 class="text-center">This Is My H1 Tag</h1>
+    <main>
+      
+      <!--No.1 Create a heading 1 tag and center the text using a Foundation class only (VERY EASY)-->
+      <h1 class="text-center">This Is My H1 Tag</h1>
 
-    <!--No.2 Create a pricing table that is only visible on medium browser screens. 
-    Only use Foundation classes to acheive this (MEDIUM)-->  
-    <section>
-      <div class="row show-for-medium-only">
-        <div class="columns medium-8">
-            <ul class="pricing-table">
-                <li class="title">Standard</li>
-                <li class="price">$99.99</li>
-                <li class="description">An awesome description</li>
-                <li class="bullet-item">1 Database</li>
-                <li class="bullet-item">5GB Storage</li>
-                <li class="bullet-item">20 Users</li>
-                <li class="cta-button"><a class="button" href="#">Buy Now</a></li>
-              </ul>
-        </div>
-      </div>
-    </section>
-
-    <!--No.3 Add a light-box with any 3 work appropriate images you like.
-    BONUS: Add Captions to your images.   
-    Tip: You need jquery, foundation.js, foundation/modernizer.js, and foundation.clearing.js (HARD)--> 
-    <section>
-        <div class="row">
-            <div class="columns large-12 medium-9 small-6 end center-text">
-              <ul class="clearing-thumbs small-block-grid-2 medium-block-grid-3 large-block-grid-4" data-clearing>
-                <li><a class="th" href="img/champs.jpg">
-
-                  <!--No.8 Create a tool tip pop up that points
-                  and descibes another element that you have already created on the page. (MEDIUM)-->
-                  <div data-tooltip aria-haspopup="true" class="has-tip"  title="Please click the picture to see a larger version">
-                    <img data-caption="UGA celebrates an amazing win with confetti falling" src="img/champs.jpg" />
-                  </div>  
-                </a></li>
-                <li ><a class="th" href="img/georgiawins.png"><img data-caption="UGA Winner of the Rose Bowl" src="img/georgiawins.png" /></a></li>
-                <li ><a class="th" href="img/nick_chubb.jpg"><img data-caption="Nick Chubb runs in a touchdown in Rose Bowl"   src="img/nick_chubb.jpg" /></a></li>
-              </ul>
-            </div>
-        </div>        
-    </section>
-
-    <!--No.4 Create two paragraphs of dummy text. 
-    Float the first one to left side of the screen and have the text justified aligned.
-    Float the second paragrpah to the right with the text right aligned.
-    Use Foundation classes only to accompolish (EASY)-->
-    <section>
-      <div class="row">
-        <div class="columns medium-8 left">
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed aliquet ipsum, et mollis arcu. Integer mattis libero sodales magna sollicitudin, tempus convallis justo malesuada. Ut tellus diam, hendrerit sed turpis vel, convallis scelerisque eros. Fusce ut turpis in libero faucibus commodo a ut sem. Quisque ut varius ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet mauris eu ex finibus vestibulum. Vivamus vel lacus nisl. Nulla dui nunc, finibus vel feugiat quis, iaculis ut lacus. Sed sit amet eros vestibulum, aliquet justo eu, maximus diam. Nulla nec iaculis sem. Duis posuere turpis turpis. Integer sagittis malesuada ligula, sagittis consequat elit finibus et. Suspendisse sed molestie justo.</p>
-        </div>
-        <div class="columns medium-8 right" >
-            <p class="text-right">Curabitur eget risus mattis diam interdum pharetra. Phasellus facilisis erat at orci vestibulum, in consequat mi finibus. Vivamus sed odio lorem. Fusce porttitor orci non ipsum pretium convallis. Aliquam suscipit rhoncus metus, eget ullamcorper nisl iaculis ut. Morbi eu sem nunc. Nulla eleifend dapibus odio, nec iaculis risus lobortis tincidunt. Donec sit amet magna ut massa facilisis tristique a sit amet ante. Sed lacus massa, blandit ut nisl eget, tempus interdum erat. Maecenas mollis ligula eu vestibulum viverra. Morbi sollicitudin eros at erat accumsan, et pulvinar lectus mattis. Etiam sed metus porta, varius mauris sit amet, suscipit augue. Praesent eget enim ut dui porta aliquet. Sed a risus tristique, tristique odio tempus, congue tellus.</p>
-        </div>
-      </div>
-    </section>
-
-    <!--No.5 Create an accoridan of your 3 favorite movies.  
-    Put a movie quote as visible for a user to guest what movie it's from.
-    When clicked, reveal the answer with an image of the film bearing it's name.
-    (Hint: Need to use Foundation 5.5 or higher)(HARD)-->
-    <section>
-      <div class="row">
-        <div class="columns medium-8">
-            <ul class="accordion" data-accordion>
-                <li class="accordion-navigation">
-                  <a class="text-center"  href="#panel1a">"Listen up, maggots. You are not special. You are not a beautiful or unique snowflake. You're the same decaying organic matter as everything else."</a>
-                  <div id="panel1a" class="content text-center">
-                    <img src="img/fight_club.jpeg" />
-                  </div>
-                </li>
-                <li class="accordion-navigation">
-                  <a class="text-center" href="#panel2a">"Fredo -- you're my older brother, and I love you. But don't ever take sides with anyone against the Family again. Ever."</a>
-                  <div id="panel2a" class="content text-center">
-                      <img src="img/the_godfather.jpeg" />
-                  </div>
-                </li>
-                <li class="accordion-navigation">
-                  <a class="text-center"  href="#panel3a">"I love the smell of napalm in the morning."</a>
-                  <div id="panel3a" class="content text-center">
-                      <img src="img/apocalypse_now.jpeg" />
-                  </div>
-                </li>
-              </ul>    
-        </div>
-
-        <!--No.6 Add alert box to some other previously created section
-        that gives the user some sort of instruction (MEDIUM)-->
-        <div class="columns medium-4">
-          <div data-alert class="alert-box">
-            <a href="#" class="close">&times;</a>
-            <p>Can you name the movie?</p>
-            <p>Click and find out.</p> 
+      <!--No.2 Create a pricing table that is only visible on medium browser screens. 
+      Only use Foundation classes to acheive this (MEDIUM)-->  
+      <section>
+        <div class="row show-for-medium-only">
+          <div class="columns medium-8">
+              <ul class="pricing-table">
+                  <li class="title">Standard</li>
+                  <li class="price">$99.99</li>
+                  <li class="description">An awesome description</li>
+                  <li class="bullet-item">1 Database</li>
+                  <li class="bullet-item">5GB Storage</li>
+                  <li class="bullet-item">20 Users</li>
+                  <li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+                </ul>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!--No.7 Create an address card (vcard) for Red Ventures and your email. (EASY)-->
-    <section>
-      <div class="row">
-        <div class="medium-6 medium-offset-3 small-12">
-            <ul class="vcard">
-              <li class="fn">Red Ventures</li>
-              <li class="street-address">Red Ventures Dr.</li>
-              <li class="locality">Fort Mill</li>
-              <li><span class="state">SC</span>, <span class="zip">29707</span></li>
-              <li class="email"><a href="#">sdarcy@redventures.com</a></li>
-            </ul>
+      <!--No.3 Add a light-box with any 3 work appropriate images you like.
+      BONUS: Add Captions to your images.   
+      Tip: You need jquery, foundation.js, foundation/modernizer.js, and foundation.clearing.js (HARD)--> 
+      <section>
+          <div class="row">
+              <div class="columns large-12 medium-9 small-6 end center-text">
+                <ul class="clearing-thumbs small-block-grid-2 medium-block-grid-3 large-block-grid-4" data-clearing>
+                  <li><a class="th" href="img/champs.jpg">
+
+                    <!--No.4 Create a tool tip pop up that points
+                    and descibes another element that you have already created on the page. (MEDIUM)-->
+                    <div data-tooltip aria-haspopup="true" class="has-tip"  title="Please click the picture to see a larger version">
+                      <img data-caption="UGA celebrates an amazing win with confetti falling" src="img/champs.jpg" />
+                    </div>  
+                  </a></li>
+                  <li ><a class="th" href="img/georgiawins.png"><img data-caption="UGA Winner of the Rose Bowl" src="img/georgiawins.png" /></a></li>
+                  <li ><a class="th" href="img/nick_chubb.jpg"><img data-caption="Nick Chubb runs in a touchdown in Rose Bowl"   src="img/nick_chubb.jpg" /></a></li>
+                </ul>
+              </div>
+          </div>        
+      </section>
+
+      <!--No.5 Make a vertical side bar with social media icons that link to
+      facebook, twitter, and youtube (MEDIUM)-->
+      <section>
+        <div class="row">
+          <div class="icon-bar vertical three-up">
+              <a class="item" href="#">
+                <img src="img/facebook_logo.png" >
+                <label>Facebook</label>
+              </a>
+              <a class="item" href="#">
+                <img src="img/twitter_logo.png" >
+                <label>Twitter</label>
+              </a>
+              <a class="item" href="#">
+                <img src="img/youtube_logo.png" >
+                <label>YouTube</label>
+              </a>
+            </div>
+
+      <!--No.6 Create two paragraphs of dummy text.
+      Float the first paragrpah to the right with the text right aligned.    
+      Float the second one to left side of the screen and have the text justified aligned.
+      Use Foundation classes only to accompolish (EASY)-->
+          <div class="columns medium-8 right" >
+              <p class="text-right">Curabitur eget risus mattis diam interdum pharetra. Phasellus facilisis erat at orci vestibulum, in consequat mi finibus. Vivamus sed odio lorem. Fusce porttitor orci non ipsum pretium convallis. Aliquam suscipit rhoncus metus, eget ullamcorper nisl iaculis ut. Morbi eu sem nunc. Nulla eleifend dapibus odio, nec iaculis risus lobortis tincidunt. Donec sit amet magna ut massa facilisis tristique a sit amet ante. Sed lacus massa, blandit ut nisl eget, tempus interdum erat. Maecenas mollis ligula eu vestibulum viverra. Morbi sollicitudin eros at erat accumsan, et pulvinar lectus mattis. Etiam sed metus porta, varius mauris sit amet, suscipit augue. Praesent eget enim ut dui porta aliquet. Sed a risus tristique, tristique odio tempus, congue tellus.</p>
+          </div>
+          <div class="columns medium-8 left">
+              <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed aliquet ipsum, et mollis arcu. Integer mattis libero sodales magna sollicitudin, tempus convallis justo malesuada. Ut tellus diam, hendrerit sed turpis vel, convallis scelerisque eros. Fusce ut turpis in libero faucibus commodo a ut sem. Quisque ut varius ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet mauris eu ex finibus vestibulum. Vivamus vel lacus nisl. Nulla dui nunc, finibus vel feugiat quis, iaculis ut lacus. Sed sit amet eros vestibulum, aliquet justo eu, maximus diam. Nulla nec iaculis sem. Duis posuere turpis turpis. Integer sagittis malesuada ligula, sagittis consequat elit finibus et. Suspendisse sed molestie justo.</p>
+          </div>
+
         </div>
-      </div>
-    </section>
+      </section>
 
+      <!--No.7 Create an accoridan of your 3 favorite movies.  
+      Put a movie quote as visible for a user to guest what movie it's from.
+      When clicked, reveal the answer with an image of the film bearing it's name.
+      (Hint: Need to use Foundation 5.5 or higher)(HARD)-->
+      <section>
+        <div class="row">
+          <div class="columns medium-8">
+              <ul class="accordion" data-accordion>
+                  <li class="accordion-navigation">
+                    <a class="text-center"  href="#panel1a">"Listen up, maggots. You are not special. You are not a beautiful or unique snowflake. You're the same decaying organic matter as everything else."</a>
+                    <div id="panel1a" class="content text-center">
+                      <img src="img/fight_club.jpeg" />
+                    </div>
+                  </li>
+                  <li class="accordion-navigation">
+                    <a class="text-center" href="#panel2a">"Fredo -- you're my older brother, and I love you. But don't ever take sides with anyone against the Family again. Ever."</a>
+                    <div id="panel2a" class="content text-center">
+                        <img src="img/the_godfather.jpeg" />
+                    </div>
+                  </li>
+                  <li class="accordion-navigation">
+                    <a class="text-center"  href="#panel3a">"I love the smell of napalm in the morning."</a>
+                    <div id="panel3a" class="content text-center">
+                        <img src="img/apocalypse_now.jpeg" />
+                    </div>
+                  </li>
+                </ul>    
+          </div>
 
-  </main> 
+          <!--No.8 Add alert box to some other previously created section
+          that gives the user some sort of instruction (MEDIUM)-->
+          <div class="columns medium-4">
+            <div data-alert class="alert-box">
+              <a href="#" class="close">&times;</a>
+              <p>Can you name the movie?</p>
+              <p>Click and find out.</p> 
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--No.9 Create an address card (vcard) for Red Ventures and your email. (EASY)-->
+      <section>
+        <div class="row">
+          <div class="medium-6 medium-offset-3 small-12">
+              <ul class="vcard">
+                <li class="fn">Red Ventures</li>
+                <li class="street-address">Red Ventures Dr.</li>
+                <li class="locality">Fort Mill</li>
+                <li><span class="state">SC</span>, <span class="zip">29707</span></li>
+                <li class="email"><a href="#">sdarcy@redventures.com</a></li>
+              </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--No.10 Create a orbit slider and have it auto-scroll with a 1.5 speed. 
+      Choose three of your favorite books, in the slide have show a picture of the book
+      along with a quote from the book as a caption below the picture
+      BONUS: Add a deep linking feature so the user can click a button
+      that takes them straight to that particular slide (HARD)-->
+      <section>
+        <div class="row">
+          <div class="columns medium-10 medium-offset-1 small-12">
+            <ul class="inline-list">
+                <li>
+                  <a data-orbit-link="headline-1" class="small button">
+                    Goto Atlas Shrugged
+                  </a>
+                </li>
+                <li>
+                  <a data-orbit-link="headline-2" class="small button">
+                    Goto How to Fail at Almost Everything and Still Win Big
+                  </a>
+                </li>
+                <li>
+                  <a data-orbit-link="headline-3" class="small button">
+                    Goto Outliers
+                  </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="columns medium-6 medium-offset-3 small-12">
+              <ul class="example-orbit text-center" data-orbit data-options="animation_speed:1500;">
+                  <li data-orbit-slide="headline-1">
+                    <img class="atlas_shrugged text-center" src="img/atlas_shrugged.jpg" alt="slide 1" />
+                    <div class="orbit-caption">
+                        “Who is John Galt?”
+                    </div>
+                  </li>
+                  <li class="active" data-orbit-slide="headline-2">
+                    <img class="scott_adams text-center" src="img/scott_adams.jpg" alt="slide 2" />
+                    <div class="orbit-caption">
+                        “Most important, understand that goals are for losers and systems are for winners.” 
+                    </div>
+                  </li>
+                  <li data-orbit-slide="headline-3">
+                    <img class="outliers text-center"  src="img/outliers.jpg" alt="slide 3" />
+                    <div class="orbit-caption">
+                        "Researchers have settled on what they believe is the magic number for true expertise: Ten Thousand Hours."
+                    </div>
+                  </li>
+                </ul>      
+          </div>
+        </div>
+      </section> 
+
+    </main> 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
