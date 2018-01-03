@@ -13,11 +13,13 @@
   </head>
   <body>
 
-    <!--No.1 Create a heading 1 tag and center the text using a Foundation class only-->
+  <main>
+   
+    <!--No.1 Create a heading 1 tag and center the text using a Foundation class only (VERY EASY)-->
     <h1 class="text-center">This Is My H1 Tag</h1>
 
     <!--No.2 Create a pricing table that is only visible on medium browser screens. 
-    Only use Foundation classes to acheive this-->  
+    Only use Foundation classes to acheive this (MEDIUM)-->  
     <section>
       <div class="row show-for-medium-only">
         <div class="columns medium-8">
@@ -34,23 +36,89 @@
       </div>
     </section>
 
-    <!--No.3 Add a light-box with any 3 work appropriate images you like.--> 
+    <!--No.3 Add a light-box with any 3 work appropriate images you like.
+    BONUS: Add Captions to your images.   
+    Tip: You need jquery, foundation.js, foundation/modernizer.js, and foundation.clearing.js (HARD)--> 
     <section>
         <div class="row">
-            <div class="columns large-8 small-12">
-              <ul class="clearing-thumbs" data-clearing>
-                <li><a href="img/champs.jpg"><img src="img/champs.jpg-th"></a></li>
-                <li><a href="img/georgiawins.png"><img src="img/georgiawins.png-th"></a></li>
-                <li><a href="img/nick_chubb.jpg"><img src="img/nick_chubb.jpg-th"></a></li>
+            <div class="columns large-12 medium-9 small-6 end center-text">
+              <ul class="clearing-thumbs small-block-grid-2 medium-block-grid-3 large-block-grid-4" data-clearing>
+                <li><a class="th" href="img/champs.jpg"><img data-caption="UGA celebrates an amazing win with confetti falling" src="img/champs.jpg" /></a></li>
+                <li ><a class="th" href="img/georgiawins.png"><img data-caption="UGA Winner of the Rose Bowl" src="img/georgiawins.png" /></a></li>
+                <li ><a class="th" href="img/nick_chubb.jpg"><img data-caption="Nick Chubb runs in a touchdown in Rose Bowl"   src="img/nick_chubb.jpg" /></a></li>
               </ul>
             </div>
         </div>        
     </section>
 
+    <!--No.4 Create two paragraphs of dummy text. 
+    Float the first one to left side of the screen and have the text justified aligned.
+    Float the second paragrpah to the right with the text right aligned.
+    Use Foundation classes only to accompolish (EASY)-->
+    <section>
+      <div class="row">
+        <div class="columns medium-8 left">
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed aliquet ipsum, et mollis arcu. Integer mattis libero sodales magna sollicitudin, tempus convallis justo malesuada. Ut tellus diam, hendrerit sed turpis vel, convallis scelerisque eros. Fusce ut turpis in libero faucibus commodo a ut sem. Quisque ut varius ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet mauris eu ex finibus vestibulum. Vivamus vel lacus nisl. Nulla dui nunc, finibus vel feugiat quis, iaculis ut lacus. Sed sit amet eros vestibulum, aliquet justo eu, maximus diam. Nulla nec iaculis sem. Duis posuere turpis turpis. Integer sagittis malesuada ligula, sagittis consequat elit finibus et. Suspendisse sed molestie justo.</p>
+        </div>
+        <div class="columns medium-8 right" >
+            <p class="text-right">Curabitur eget risus mattis diam interdum pharetra. Phasellus facilisis erat at orci vestibulum, in consequat mi finibus. Vivamus sed odio lorem. Fusce porttitor orci non ipsum pretium convallis. Aliquam suscipit rhoncus metus, eget ullamcorper nisl iaculis ut. Morbi eu sem nunc. Nulla eleifend dapibus odio, nec iaculis risus lobortis tincidunt. Donec sit amet magna ut massa facilisis tristique a sit amet ante. Sed lacus massa, blandit ut nisl eget, tempus interdum erat. Maecenas mollis ligula eu vestibulum viverra. Morbi sollicitudin eros at erat accumsan, et pulvinar lectus mattis. Etiam sed metus porta, varius mauris sit amet, suscipit augue. Praesent eget enim ut dui porta aliquet. Sed a risus tristique, tristique odio tempus, congue tellus.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--No.5 Create an accoridan of your 3 favorite movies.  
+    Put a movie quote as visible for a user to guest what movie it's from.
+    When clicked, reveal the answer with an image of the film should appear and the film's name.
+    (Hint: Need to use Foundation 5.5 or higher)-->
+    <section>
+      <div class="row">
+        <div class="columns large-8 large-offset-2 end">
+            <ul class="accordion" data-accordion>
+                <li class="accordion-navigation">
+                  <a class="text-center"  href="#panel1a">"Listen up, maggots. You are not special. You are not a beautiful or unique snowflake. You're the same decaying organic matter as everything else."</a>
+                  <div id="panel1a" class="content">
+                    <img src="img/fight_club.jpeg" />
+                  </div>
+                </li>
+                <li class="accordion-navigation">
+                  <a class="text-center" href="#panel2a">"Fredo -- you're my older brother, and I love you. But don't ever take sides with anyone against the Family again. Ever."</a>
+                  <div id="panel2a" class="content">
+                      <img src="img/the_godfather.jpeg" />
+                  </div>
+                </li>
+                <li class="accordion-navigation">
+                  <a class="text-center"  href="#panel3a">"I love the smell of napalm in the morning."</a>
+                  <div id="panel3a" class="content">
+                      <img src="img/apocalypse_now.jpeg" />
+                  </div>
+                </li>
+              </ul>    
+        </div>
+      </div>
+    </section>
+
+  </main> 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/vendor/modernizr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation/foundation.clearing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/js/foundation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/js/foundation/foundation.accordion.js"></script>
     <script>
-      $(document).foundation();
+      $(document).foundation({
+        accordion: {
+          // specify the class used for accordion panels
+          content_class: 'content',
+          // specify the class used for active (or open) accordion panels
+          active_class: 'active',
+          // allow multiple accordion panels to be active at the same time
+          multi_expand: true,
+          // allow accordion panels to be closed by clicking on their headers
+          // setting to false only closes accordion panels when another is opened
+          toggleable: true
+        }
+      });
     </script>
   </body>
 </html>
