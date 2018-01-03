@@ -68,27 +68,27 @@
 
     <!--No.5 Create an accoridan of your 3 favorite movies.  
     Put a movie quote as visible for a user to guest what movie it's from.
-    When clicked, reveal the answer with an image of the film should appear and the film's name.
-    (Hint: Need to use Foundation 5.5 or higher)-->
+    When clicked, reveal the answer with an image of the film bearing it's name.
+    (Hint: Need to use Foundation 5.5 or higher)(HARD)-->
     <section>
       <div class="row">
         <div class="columns large-8 large-offset-2 end">
             <ul class="accordion" data-accordion>
                 <li class="accordion-navigation">
                   <a class="text-center"  href="#panel1a">"Listen up, maggots. You are not special. You are not a beautiful or unique snowflake. You're the same decaying organic matter as everything else."</a>
-                  <div id="panel1a" class="content">
+                  <div id="panel1a" class="content text-center">
                     <img src="img/fight_club.jpeg" />
                   </div>
                 </li>
                 <li class="accordion-navigation">
                   <a class="text-center" href="#panel2a">"Fredo -- you're my older brother, and I love you. But don't ever take sides with anyone against the Family again. Ever."</a>
-                  <div id="panel2a" class="content">
+                  <div id="panel2a" class="content text-center">
                       <img src="img/the_godfather.jpeg" />
                   </div>
                 </li>
                 <li class="accordion-navigation">
                   <a class="text-center"  href="#panel3a">"I love the smell of napalm in the morning."</a>
-                  <div id="panel3a" class="content">
+                  <div id="panel3a" class="content text-center">
                       <img src="img/apocalypse_now.jpeg" />
                   </div>
                 </li>
@@ -97,12 +97,32 @@
       </div>
     </section>
 
+    <!--No.6 Create an address card (vcard) for Red Ventures and your email. (EASY)-->
+    <section>
+      <div class="row">
+        <div class="medium-6 medium-offset-3 small-12">
+            <ul class="vcard">
+              <li class="fn">Red Ventures</li>
+              <li class="street-address">Red Ventures Dr.</li>
+              <li class="locality">Fort Mill</li>
+              <li><span class="state">SC</span>, <span class="zip">29707</span></li>
+              <li class="email"><a href="#">sdarcy@redventures.com</a></li>
+            </ul>
+        </div>
+      </div>
+
+    </section>
+
   </main> 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!--Needed for Clearing Lightbox-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/vendor/modernizr.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation/foundation.clearing.min.js"></script>
+
+    <!--Needed for Accordian-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/js/foundation.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/js/foundation/foundation.accordion.js"></script>
     <script>
@@ -120,5 +140,6 @@
         }
       });
     </script>
+
   </body>
 </html>
