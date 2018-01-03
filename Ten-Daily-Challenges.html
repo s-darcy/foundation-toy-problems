@@ -43,7 +43,14 @@
         <div class="row">
             <div class="columns large-12 medium-9 small-6 end center-text">
               <ul class="clearing-thumbs small-block-grid-2 medium-block-grid-3 large-block-grid-4" data-clearing>
-                <li><a class="th" href="img/champs.jpg"><img data-caption="UGA celebrates an amazing win with confetti falling" src="img/champs.jpg" /></a></li>
+                <li><a class="th" href="img/champs.jpg">
+
+                  <!--No.8 Create a tool tip pop up that points
+                  and descibes another element that you have already created on the page. (MEDIUM)-->
+                  <div data-tooltip aria-haspopup="true" class="has-tip"  title="Please click the picture to see a larger version">
+                    <img data-caption="UGA celebrates an amazing win with confetti falling" src="img/champs.jpg" />
+                  </div>  
+                </a></li>
                 <li ><a class="th" href="img/georgiawins.png"><img data-caption="UGA Winner of the Rose Bowl" src="img/georgiawins.png" /></a></li>
                 <li ><a class="th" href="img/nick_chubb.jpg"><img data-caption="Nick Chubb runs in a touchdown in Rose Bowl"   src="img/nick_chubb.jpg" /></a></li>
               </ul>
@@ -72,7 +79,7 @@
     (Hint: Need to use Foundation 5.5 or higher)(HARD)-->
     <section>
       <div class="row">
-        <div class="columns large-8 large-offset-2 end">
+        <div class="columns medium-8">
             <ul class="accordion" data-accordion>
                 <li class="accordion-navigation">
                   <a class="text-center"  href="#panel1a">"Listen up, maggots. You are not special. You are not a beautiful or unique snowflake. You're the same decaying organic matter as everything else."</a>
@@ -94,10 +101,20 @@
                 </li>
               </ul>    
         </div>
+
+        <!--No.6 Add alert box to some other previously created section
+        that gives the user some sort of instruction (MEDIUM)-->
+        <div class="columns medium-4">
+          <div data-alert class="alert-box">
+            <a href="#" class="close">&times;</a>
+            <p>Can you name the movie?</p>
+            <p>Click and find out.</p> 
+          </div>
+        </div>
       </div>
     </section>
 
-    <!--No.6 Create an address card (vcard) for Red Ventures and your email. (EASY)-->
+    <!--No.7 Create an address card (vcard) for Red Ventures and your email. (EASY)-->
     <section>
       <div class="row">
         <div class="medium-6 medium-offset-3 small-12">
@@ -110,8 +127,8 @@
             </ul>
         </div>
       </div>
-
     </section>
+
 
   </main> 
 
@@ -125,6 +142,10 @@
     <!--Needed for Accordian-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/js/foundation.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/js/foundation/foundation.accordion.js"></script>
+
+    <!--Needed for ToolTip-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation/foundation.tooltip.min.js"></script>
+
     <script>
       $(document).foundation({
         accordion: {
